@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+
+    /*----THEME 1----*/
+
+    /*MAIN BACKGROUND*/
+    --veryDarkDesaturatedBlue1: hsl(222, 26%, 31%);
+    /*TOGGLE AND KEYPAD BACKGROUND*/
+    --veryDarkDesaturatedBlue2: hsl(223, 31%, 20%);
+    /*SCREEN BACKGROUND*/
+    --VeryDarkDesaturatedBlue3: hsl(224, 36%, 15%);
+
+    /*Keys*/
+    --blueKeyBackground: hsl(225, 21%, 49%);
+    --blueKeyShadow: hsl(224, 28%, 35%);
+
+    --red: hsl(6, 63%, 50%);
+    --darkRedKeyShadow: hsl(6, 70%, 34%);
+
+    --orangeKeyBackground: hsl(30, 25%, 89%);
+    --orangeKeyShadow: hsl(28, 16%, 65%);
+
+    /*text*/
+    --veryDarkGrayishBlue: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
+
+
+    /*----THEME 2----*/
+
+    /*MAIN BACKGROUND*/
+    --mainBackgroundT2: hsl(0, 0%, 90%);
+    --toggle-keypadBackgroundT2: hsl(0, 5%, 81%);
+    --screenBackgroundT2: hsl(0, 0%, 93%);
+
+    /*keys*/
+    --cyanKeybackgroundT2: hsl(185, 42%, 37%);
+    --cyanKeyShadowT2: hsl(185, 58%, 25%);
+
+    --orangeKeyBackgroundT2: hsl(25, 98%, 40%);
+    --oorangeKeyShadowT2: hsl(25, 99%, 27%);
+
+    --yellowKeyBackgroundT2: hsl(45, 7%, 89%);
+    --orangeKeyShadowT2: hsl(35, 11%, 61%);
+
+    /*text*/
+    --yellowTextT2: hsl(60, 10%, 19%);
+
+
+    /*----THEME 3----*/
+    
+    /*Backgrounds*/
+    --mainBackgroundT3: hsl(268, 75%, 9%);
+    --toggle-keypad-screenBackgroundT3: hsl(268, 71%, 12%);
+
+    /*keys*/
+    --violetKeyBackgroundT3: hsl(281, 89%, 26%);
+    --magentaKeyShadowT3: hsl(285, 91%, 52%);
+
+    --cyanKey-toggleBackgroundT3: hsl(176, 100%, 44%);
+    --cyanKeyShadowT3: hsl(177, 92%, 70%);
+
+    --darkVioletKeyBackgroundT3: hsl(268, 47%, 21%);
+    --darkMagentaKeyShadowT3: hsl(290, 70%, 36%);
+
+    /*Text*/
+    --lightYellowTextT3: hsl(52, 100%, 62%);
+    --veryDarkBlueTextT3: hsl(198, 20%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--veryDarkGrayishBlue);
+    background-color: var(--orangeKeyBackground);
+    border: none;
+    border-bottom: 4px solid var(--orangeKeyShadow);
+    border-radius: 5px;
+}
+
+.operator{
+    font-size: 1.2rem;
+}
+
+.calculator{
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem;
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--veryDarkDesaturatedBlue1);
+
+}
+
+.calculator__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: var(--white);
+}
+
+.calculator__top__theme{
+    display: flex;
+    align-items: center;
+}
+
+.theme{
+    margin: 1.2rem 1rem 0 0;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .3rem;
+}
+
+.number{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.toggle-switch{
+    height: 25px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--veryDarkDesaturatedBlue2);
+}
+
+
+
+.toggle-switch .circle:nth-child(1){
+    background-color: var(--red);
+}
+
+.toggle-switch .circle:nth-child(2){
+    background-color: var(--orangeKeyBackgroundT2);
+}
+
+.toggle-switch .circle:nth-child(3){
+    background-color: var(--cyanKey-toggleBackgroundT3);
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
+
+.calculator__main{
+    margin-top: 2rem;
+}
+
+.screen{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#input-screen{
+    height: 50px;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--VeryDarkDesaturatedBlue3);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.keypad{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--veryDarkDesaturatedBlue2);
+    border-radius: 8px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .5rem;   
+}
+
+.last-row{
+    display: flex;
+}
+
+.last-row button{
+    width: 50%;
+}
+

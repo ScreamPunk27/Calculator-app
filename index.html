@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="calculator__top">
+      <h1 class="logo">calc</h1>
+
+      <div class="calculator__top__theme">
+        <p class="theme">THEME</p>
+        <div class="switch-container">
+          <div class="numbers">
+            <p class="number">1</p>
+            <p class="number">2</p>
+            <p class="number">3</p>
+          </div>
+          
+          <div class="toggle-switch">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="calculator__main">
+      <div class="screen">
+        <input type="text" id="input-screen" readonly>
+      </div>
+
+      <div class="keypad">
+        <div class="row">
+          <button class="key" id="7">7</button>
+          <button class="key" id="8">8</button>
+          <button class="key" id="9">9</button>
+          <button class="operator op" id="de">DEL</button>
+        </div>
+
+        <div class="row">
+          <button class="key" id="4">4</button>
+          <button class="key" id="5">5</button>
+          <button class="key" id="6">6</button>
+          <button class="key operator"   id="+">+</button>
+        </div>
+
+        <div class="row">
+          <button class="key" id="1">1</button>
+          <button class="key" id="2">2</button>
+          <button class="key" id="3">3</button>
+          <button class="key operator" id="-">-</button>
+        </div>
+
+        <div class="row">
+          <button class="key operator" id=".">.</button>
+          <button class="key" id="0">0</button>
+          <button class="key operator" id="/">/</button>
+          <button class="key operator" id="*">x</button>
+        </div>
+
+        <div class="row last-row">
+          <button class="operator op" id="ac">RESET</button>
+          <button class="equal operator" id="=">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ScreamPunk27</a>.
+  </div>
+
+  <script type="module" src="js/calculator.js"></script>
+  <script src="js/themes.js"></script>
+</body>
+</html>
